@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta CEP</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <img src="img.png" alt="img cep" class="img">
+    <form id="cepForm">
+        <div class="form-group">
+            <label for="cep">CEP:</label>
+            <input type="text" name="cep" required placeholder="Digite o CEP" data-js="cep" class="cep">
+            <button type="submit" data-js="button" class="button">Buscar</button>
+        </div>
+        
+    </form>
+
+    <div>
+        <p data-js="status" class="status"></p>
+    </div>
+
+    <div class="endereco">
+        <h2>Endereço</h2>
+        <p>Logradouro: <span data-js="logradouro"></span></p>
+        <p>Bairro:     <span data-js="bairro"></span></p>
+        <p>Estado:     <span data-js="estado"></span></p>
+        <p>Cidade:     <span data-js="cidade"></span></p>
+        <p>CEP:        <span data-js="cepResult"></span></p>
+        <p>DDD:        <span data-js="ddd"></span></p>
+    </div>
+
+    
+
+    <script src="index.js"></script>
+</body>
+</html>
